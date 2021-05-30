@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: white;
+}
+.todos{
+    height: auto;
+    width: 20%;
+    margin: 50px;
+}
+.tittle{
+    color: purple;
+}
+.card{
+    color: white;
+    width: 100%;
+    height: 80px;
+    margin: 5px 0px;
+    background-color: rgb(179, 150, 179);
+    padding: 10px;
+}
+.t-card{
+    height: 50%;
+    font-size: 25px;
+}
+.action{
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn{
+    color: white;
+    border: none;
+    background-color:purple;
+    padding: 5px;
+}
+.btn-alt{
+    background-color: white;
+    color: rgb(161, 0, 0);
+    border: solid 1px rgb(161, 0, 0);
+    transition: .5s;
+}
+.btn-alt:hover{
+    color: white;
+    background-color: rgb(161, 0, 0);
+}
+.backdrop{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(82, 82, 82, .5);
+    z-index: 9;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    height: 90px;
+    width: 200px;
+    padding: 10px;
+    margin-left: -105px;
+    margin-top: -50px;
+    z-index: 10;
+}
+.modal p{
+    color:purple;
+    height:50%;
+}
+.modal .action button{
+    margin: 0px 5px;
 }
